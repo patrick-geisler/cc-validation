@@ -1,0 +1,20 @@
+{
+  "name": "credit-card-validation",
+  "version": "1.0.0",
+  "description": "Text input for validating credit cards using the Luhn checksum",
+  "main": "index.js",
+  "scripts": {
+    "back:dev": "cd server && npm run start:dev",
+    "front:dev": "npm run start",
+    "dev": "concurrently \"npm run start --workspace=app\" \"npm run start:dev --workspace=server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "server",
+    "app"
+  ],
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
